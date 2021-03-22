@@ -93,7 +93,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd924e5t3rfu0gh',
         'USER': 'wjbnyixxxexzye',
-        'PASSWORD': '8540d0e93eb121fd804b1e5379f5d8b8bdc34d71318d004126d09ab6d80f97be',
+        'PASSWORD': os.environ.get('HEROKU_POSGRES_PSWD',"CHANGE ME"),
         'HOST': 'ec2-18-204-101-137.compute-1.amazonaws.com',
         'PORT': 5432,
     }
